@@ -2,28 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elder Emmanuel Eshun - Home Page</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 - Dynamic Web Fundamentals - Elder Emmanuel Eshun</title>
+  <meta name="description" content="WDD131 - Dynamic Web Fundamentals by Elder Emmanuel Eshun. A student of Web Development at BYU-Idaho exploring HTML, CSS, and JavaScript with purpose." />
+  <meta name="author" content="Elder Emmanuel Eshun" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Web Development Journey</h1>
-    <p>BYU-Idaho | WDD131</p>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/eph/6?lang=eng&id=p7-8#p7" target="_blank" rel="noopener">Scripture</a>
+      <a href="./final-project.html" target="_blank" rel="noopener">Final Project</a>
+    </nav>
   </header>
 
   <main>
-    <section class="intro">
-      <img src="images/profile.jpg" alt="Elder Emmanuel Eshun" />
-      <p>Hello! I'm Elder Emmanuel Eshun from Accra, Ghana. I'm studying Web Development and Design at BYU-Idaho to become a software developer who glorifies God through technology.</p>
+    <h1>Elder Emmanuel Eshun</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Elder Emmanuel Eshun, Web Development student from Ghana" loading="lazy" />
+      <p>
+        I’m Elder Emmanuel Eshun from Accra, Ghana. As a Web Development and Design student at BYU-Idaho, I aim to build digital experiences that reflect excellence, integrity, and Christ-centered service.
+        I serve as Secretary of the AAA Children’s Ministry and create faith-based content on TikTok (“Journey with EL”) and LinkedIn to share hope and truth through technology.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Ghana & My Mission</h2>
+      <img src="images/ghana-flag.jpg" alt="Flag of Ghana" loading="lazy" />
+      <p>
+        Ghana—known as the “Gateway to Africa”—is rich in culture, faith, and innovation. While Madagascar is famed for its biodiversity, my homeland inspires me to serve with purpose.
+        Guided by Ephesians 6:7–8, I pursue development not just as a career, but as worship: “Serve wholeheartedly, as if you were serving the Lord.” My mission is to build tools that advance education, evangelism, and eternal impact.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year">2026</span> | Elder Emmanuel Eshun | Accra, Ghana</p>
-    <p>Last updated: <span id="lastUpdated"></span></p>
+    <p>&copy; <span id="currentyear"></span> | Elder Emmanuel Eshun | Accra, Ghana</p>
+    <p id="lastModified">Last modification: </p>
   </footer>
-
-  <script src="js/getdates.js"></script>
 </body>
 </html>
